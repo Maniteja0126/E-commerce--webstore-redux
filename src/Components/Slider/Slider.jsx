@@ -15,7 +15,6 @@ export const Slider = () => {
     <div className="relative pb-4">
       <div>
         {sliderData.map((item) => {
-           
           return (
             <div
               key={item.id}
@@ -32,7 +31,6 @@ export const Slider = () => {
                     src={item.img}
                     alt="shoes"
                   ></img>
-                  
                 )}
               </div>
               <div className="absolute top-44 mx-auto inset-x-1/4">
@@ -104,4 +102,3 @@ export const Slider = () => {
   );
 };
 
- 
