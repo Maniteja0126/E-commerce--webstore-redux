@@ -1,3 +1,5 @@
 export {Main} from './Main/Main'
 export {Navbar} from './Navbar/Navbar'
 export {Slider} from './Slider/Slider'
+export {NavigateButtons} from './NavigateButtons/NavigateButtons'
+export {FilteredProduct} from './FilteredProduct/FilteredProduct'
