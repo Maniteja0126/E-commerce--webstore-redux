@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom"
 import ProductCard from "./ProductCard"
 export const FilteredProduct = () => {
     const products = useSelector((state) => state.products.filterProducts)
-    console.log(products)
+    // console.log(products)
     const { type } = useParams()
     return (
         <div>

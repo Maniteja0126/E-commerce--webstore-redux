@@ -19,15 +19,15 @@ export const NavigateButtons = () => {
                                 size="lg"
                                 variant="outlined"
                                 ripple={true}
-                                className="hover:bg-green-300 duration-300 ease"
+                                className="duration-300 ease"
                                 onClick={() => dispatch(filterProducts(button))}
                             >{button}</Button>
                         </Link>
                     </div>
                 })}
             </div>
-            <div className="bg-green-300 p-2 w-[55%] mx-auto rounded-md">
-                <h3 className="text-orange-900 text-center text-lg font-inter tracking-normal leading-none">SALES UP TO 50%</h3>
+            <div className="bg-black p-2 w-[55%] mx-auto rounded-md">
+                <h3 className="text-red-900 text-center text-lg font-inter tracking-normal leading-none">SALES UP TO 50%</h3>
             </div>
             <div className="flex justify-center items-center py-4">
                 <img
