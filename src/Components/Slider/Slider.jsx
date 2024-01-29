@@ -13,6 +13,11 @@ export const Slider = () => {
 
   return (
     <div className="relative pb-4">
+      <div className='bg-black p-4 w-full  flex justify-between'>
+                <div className='text-white font-inter test-base font-medium tracking-normal leading-none text-center'>50% OFF</div>
+                <div className='text-white font-inter test-base font-medium tracking-normal leading-none text-center'>Free shipping and returns</div>
+                <div className='text-white font-inter test-base font-medium tracking-normal leading-none text-center'>Different payment methods</div>
+            </div>
       <div>
         {sliderData.map((item) => {
           return (
