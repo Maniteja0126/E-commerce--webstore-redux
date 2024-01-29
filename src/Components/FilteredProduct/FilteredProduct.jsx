@@ -1,14 +1,16 @@
 import { useSelector } from "react-redux"
 import { useParams } from "react-router-dom"
 import ProductCard from "./ProductCard"
+import {Navbar} from '../Navbar/Navbar'
 export const FilteredProduct = () => {
     const products = useSelector((state) => state.products.filterProducts)
     // console.log(products)
     const { type } = useParams()
     return (
         <div>
-            <div className="pt-16">
-                <div className="pl-14">
+             <Navbar />
+            <div className="pt-1">
+                <div className="pl-16">
                     <h1 className="text-4xl font-inter text-gray-600 font-bold tracking-normal leading-none">{type}</h1>
                 </div>
                 <div className="grid grid-cols-4 justify-items-center py-8 gap-12">
