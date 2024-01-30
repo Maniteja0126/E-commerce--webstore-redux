@@ -2,6 +2,7 @@ import logo from '../../assets/images/logo.png'
 import { useState } from 'react';
 import { Cart } from '../Cart/Cart';
 import { useSelector } from 'react-redux';
+
 export const Navbar = () => {
     const totalAmount = useSelector((state) => state.cart.totalAmount)
     const [open, setOpen] = useState(false);
@@ -14,10 +15,12 @@ export const Navbar = () => {
 
             <div className='flex justify-around items-center'>
                 <div>
-                    <img className="h-28 w-full" src={logo} alt="store"></img>
+                    
+                    <img className="h-28 w-full" src={logo} alt="store" />
+                    
                 </div>
                 <div className='flex flex-row items-center'>
-                    <button className=" font-inter text-base font-medium tracking-normal leading-none text-center mr-4">Logout</button>
+                    {/* <button className=" font-inter text-base font-medium tracking-normal leading-none text-center mr-4">Logout</button> */}
                     <div className="flex flex-row items-center">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
