@@ -4,6 +4,7 @@ import { BrowserRouter , Routes , Route } from 'react-router-dom';
 import {Main , FilteredProduct, SingleProduct} from './Components'
 
 
+
 function App() {
 
 
@@ -11,7 +12,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Main />} />
+        <Route path='/' element={ <Main/>} />
         <Route path='/filteredProducts/:type' element={<FilteredProduct />} />
         <Route path='/filteredProducts/:type/:id' element={<SingleProduct />} />
       </Routes>

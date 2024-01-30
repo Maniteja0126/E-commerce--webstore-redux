@@ -4,12 +4,13 @@ import { useParams } from "react-router-dom";
 import { Tooltip, Button } from "@material-tailwind/react";
 import { addToCart } from "../../features/slices/cartSlice";
 import { useDispatch } from "react-redux";
-import {Navbar} from '../Navbar/Navbar'
+import {Navbar} from '../Navbar/Navbar';
 
 export const SingleProduct = () => {
   const product = useSelector((state) => state.products.singleProduct);
   const productSize = product[0].size ? product[0].size[0] : "";
   const productColor = product[0].color[0];
+  // console.log(productColor)
   const [size, setSize] = useState(productSize);
   const [color, setColor] = useState(productColor);
 

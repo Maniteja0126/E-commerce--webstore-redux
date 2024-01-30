@@ -2,10 +2,10 @@ import { Card, CardHeader, CardBody, CardFooter, Typography } from "@material-ta
 import { useDispatch } from "react-redux"
 import { singleProduct } from "../../features/slices/productSlice"
 import { Link, useParams } from 'react-router-dom'
-import { Navbar } from "../Navbar/Navbar"
 
 
-const ProductCard = ({ id, name, text, img, price, colors }) => {
+
+export const ProductCard = ({ id, name, text, img, price, colors }) => {
     const dispatch = useDispatch()
     const { type } = useParams()
     return (
@@ -47,4 +47,4 @@ const ProductCard = ({ id, name, text, img, price, colors }) => {
     )
 }
 
-export default ProductCard
+ 

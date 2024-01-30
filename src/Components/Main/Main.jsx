@@ -1,7 +1,6 @@
 import React from 'react'
-import { Navbar } from '../Navbar/Navbar'
-import { Slider } from '../Slider/Slider'
-import { NavigateButtons } from '../NavigateButtons/NavigateButtons'
+import {Navbar,Slider, NavigateButtons,ProductSection, Footer } from '../index'
+
 
 export const Main = () => {
   return (
@@ -9,6 +8,8 @@ export const Main = () => {
       <Navbar/>
       <Slider />
       <NavigateButtons/>
+      <ProductSection/>
+      <Footer />
     </div>
   )
 }
